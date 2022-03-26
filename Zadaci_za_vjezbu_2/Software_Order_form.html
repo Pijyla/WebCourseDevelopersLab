@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <label for="license_details">License details</label> 
+    <br>
+    <ul style="list-style-type:disc">
+        <li> <label for="email">Email address</label> <input required type="email" maxlength="50" size="30"> </li>
+        <li> <label for="website"> Website</label> <input required type="url" maxlength="50" placeholder="http://www.example.com/" size="30"> </li>
+        <li> <label for="licenses_No">Number of licenses</label> <input required type="text" maxlenght="3" placeholder="How many to buy (1-100)" size="30"> </li>
+    </ul>
+    <br>
+
+    <label for="billing_details">Billing details</label> 
+    <br>
+    <ul style="list-style-type:disc">
+        <li> <label for="name">Name</label> <input required type="text" maxlength="50" size="30" placeholder="First Last"> </li>
+        <li> <label for="address">Address</label> <textarea required name="address" cols="30" rows="3" placeholder="House number, street, city, state"></textarea> </li>
+        <li> <label for="postal_code">Postal Code</label> <input required type="text" placeholder="Post code or zip code" size="30"> </li>
+        <li> <label for="country">Country</label> 
+            <select required name="country">
+                <option value="Germany">Germany</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="France">France</option>
+                <option value="Hungary">Hungary</option>
+            </select> </li>
+        <li> <label for="phone_number">Phone <i>(optional)</i></label> <input type="text" placeholder="Include country prefix, e.g." size="30"> </li>
+    </ul>
+    <br>
+
+    <label for="payment_details">Payment details</label> 
+    <br>
+    <ul style="list-style-type:disc">
+        <li> <label for="card">Card number</label> <input required type="text" size="30" placeholder="As shown on the front of your card"> </li>
+        <li> <label for="cvv">CVV code</label> <input required type="text" maxlength="3" placeholder="3-digit number on back of your card" size="30"> </li>
+        <li> <label for="exp_date">Expiry date</label> <input required type="text" placeholder="YYYY-MM" size="30"> </li>
+    </ul>
+    <br>
+
+    <button>Place Your Order</button>
+
+    </form>
+</body>
+</html>

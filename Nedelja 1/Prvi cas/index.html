@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p title="Naslov paragrafa">Paragraf</p>
+    <h1>Naslov 1</h1>
+    <h2>Naslov 2</h2>
+    <h6>Naslov 6</h6>
+    <p>
+        Unosimo neku formulu: <br>
+        x<sub>1</sub>=x<sub>2</sub><sup>2</sup>
+        <del>Nije dobro</del>
+    </p>
+
+    <!-- Komentar -->
+
+    <a href="https://google.com" target="_blank">Click to open Google</a>
+
+    <div>
+        <h2>Predmeti:</h2>
+        <ul>
+            <li>Matematika</li>
+            <li>Programiranje</li>
+            <li>Likovno</li>
+        </ul>
+    </div>
+
+    <div>
+        <h1>Popularnost programskih jezika:</h1>
+        <ol type="I">
+            <li>JS</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+        </ol>
+    </div>
+
+    <a href="https://google.com" target="_blank">
+        <img src="./images/4.png" alt="The wither game">
+    </a>
+
+    <br><br>
+
+    <table>
+        <caption>Korisnici</caption>
+        <tr>
+            <th>Ime</th>
+            <th>Prezime</th>
+            <th>Adresa</th>
+            <th>Slika</th>
+        </tr>
+        <tr>
+            <td>Marko</td>
+            <td>Markovic</td>
+            <td>Podgorica</td>
+            <td rowspan="2">Avatari</td>
+            <td><img src="./images/4.png" height="200" width="200" alt="The witcher game"></td>
+        </tr>
+        <tr>
+            <td>Balsa</td>
+            <td>Balsic</td>
+            <td colspan="2">Podgorica</td>
+            <td><img src="./images/4.png" height="200" width="200" alt="The witcher game"></td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <div>
+        <input type="text" value="Test">
+        <input type="color">
+        <input type="number" min="2" max="10" step="2">
+        <input type="range" min="0" max="100" step="10" value="90">
+        <input type="datetime-local">
+        <input type="radio" name="radio_btn">
+        <input type="radio" name="radio_btn">
+        <input type="checkbox">
+        <input type="checkbox">
+    </div>
+
+    <br><br>
+
+    <div>
+        <select name="city">
+            <option value="" disabled selected>Odaberite grad:</option>
+            <option value="tgd">Podgorica</option>
+            <option value="tiv">Tivat</option>
+        </select>
+    </div>
+
+    <br><br>
+
+    <!-- BUTTON -->
+
+    <button onclick="alert('Hello!')">
+        Click this button!
+    </button>
+
+    <br><br>
+
+    <!-- TEXTAREA -->
+
+    <textarea name="message" cols="30" rows="10" placeholder="Enter your name">Lorem ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</textarea>
+    
+    <br><br>
+
+    <!-- INPUT TYPE: TEXT AND PASSWORD -->
+
+    <a href="#C4">Jump to Chapter 4</a>
+    <br><br>
+    <form>
+        <label for="last_name">Last name:</label> <br> <!-- Najbolje je staviti i for i name i id isto (u ovom primjeru sve je last_name), da nas ne bi zbunjivalo.-->
+        <input placeholder="Unesite ime" type="text" name="last_name" id="last_name"> <!-- Name stavljamo ako cemo da saljemo gore kroz link. ID je uvijek ista vrijednost kao za FOR (last_name), ali zato najbolje za sve stavljati istu vrijednost, tj. i za name isto staviti last_name! -->
+        <br><br>
+        <label for="inp_pass">Password:</label> <br>
+        <input placeholder="Unesite sifru" type="password" id="password" name="password"> <!-- Ako zelimo da nam sifra bude vidljiva dok je kucamo (umjesto onih kruzica ili zvjezdica), mozemo na bilo kojoj stranici da idemo na inspect i onda samo promijenimo za password type u text (obicno po difoltu bude podeseno na password da ne bi bilo vidljivo prilikom kucanja sifre). -->
+
+    <br><br>
+
+    <!-- RADIO -->
+
+    <!-- Bitno je da se ID i FOR poklope (da su im vrij. iste), a NAME je isti jer biramo jednu od 2 opcije. -->
+    <!-- Na stranici nikad ne smije biti vise istih ID-a, to je jedinstvena vrijednost! -->
+    <label for="opcija1"></label>Opcija 1<input type="radio" id="opcija1" name="opcija" value="Opcija 1">
+    <label for="opcija2"></label>Opcija 2<input type="radio" id="opcija2" name="opcija" value="Opcija 2">
+
+    <br><br>
+
+    <!-- OPTIONS -->
+
+    <select name="cars" size="2" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option selected value="audi">Audi</option>
+    </select>
+
+    <br> <br>
+
+    <textarea placeholder="Ostavite neki komentar:" name="comment" cols="30" rows="10"></textarea>
+    <br><br>
+    <input type="submit" value="Submit">
+    </form> 
+
+    <br><br>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <h2 id="C4">Naslov C4</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Itaque praesentium sapiente inventore esse, eaque rem fugit reiciendis <br> laboriosam error delectus, a quae id eum quam, veritatis maxime minus! Obcaecati, laboriosam.</p>
+    <video controls poster="../Prvi cas/images/4.png">
+        <source src="../media/videos/The Witcher 3 - Wild Hunt - Killing Monsters Cinematic Trailer.mp4"> 
+    </video>
+</body>
+</html>
+ 
